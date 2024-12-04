@@ -5,9 +5,9 @@ lint:
 format:
 	black *.py mylib/*.py
 test:
-	# test app
+	python -m pytest -vv --cov=mylib test_logic.py
 build:
 	# build the container
 deploy:
 	# deploy the proyect
-all: install lint format test deploy	
+all: install lint format test build deploy
