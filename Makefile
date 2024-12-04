@@ -3,7 +3,7 @@ install:
 lint:
 	# sintax flake8 or pylint
 format:
-	# format code
+	black *.py mylib/*.py
 test:
 	# test app
 deploy:
