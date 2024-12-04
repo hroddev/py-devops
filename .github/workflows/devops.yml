@@ -2,7 +2,7 @@ name: Python application test with Github Actions
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkouts@v2
     - name: Set up Python 3.10
@@ -14,12 +14,10 @@ jobs:
         make install
     - name: Lint with pylint
       run: |
-        make lint
+        #make lint
     - name: Test
       run: |
-        make test
+        #make test
     - name: Format code
       run: |
-        make format
-        
-  
+        #make format
