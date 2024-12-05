@@ -7,3 +7,4 @@ fire==0.7.0
 fastapi==0.115.6
 uvicorn==0.32.1
 textblob==0.18.0.post0
+httpx==0.28.0
